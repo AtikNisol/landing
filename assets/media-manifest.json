@@ -1,0 +1,28 @@
+{
+  "images": [
+    { "file": "assets/images/history-808.png", "where": "Истоки / карточка 808", "hint": "Фотография или коллаж TR-808 (1600x900 PNG/JPG)" },
+    { "file": "assets/images/history-mpc.jpg", "where": "Истоки / культура сэмплинга", "hint": "Фото Akai MPC (1600x900 JPG)" },
+    { "file": "assets/images/ableton-session.png", "where": "Ableton / Session View", "hint": "Скриншот Ableton Session View (1600x1000 PNG)" },
+    { "file": "assets/images/ableton-arrangement.png", "where": "Ableton / Arrangement View", "hint": "Скриншот Ableton Arrangement View (1600x1000 PNG)" },
+    { "file": "assets/images/ableton-push.jpg", "where": "Ableton / Push", "hint": "Фото Ableton Push в работе (1600x1000 JPG)" },
+    { "file": "assets/images/workflow-texture.png", "where": "Практика / текстуры", "hint": "Скриншот аранжировки с текстурами" },
+    { "file": "assets/images/setup-midi.jpg", "where": "Сетап / MIDI", "hint": "Фото MIDI-клавиатуры (JPG)" },
+    { "file": "assets/images/setup-phones.jpg", "where": "Сетап / Наушники", "hint": "Фото студийных наушников (JPG)" },
+    { "file": "assets/images/setup-interface.jpg", "where": "Сетап / Интерфейс", "hint": "Фото аудиоинтерфейса (JPG)" }
+  ],
+  "audio": [
+    { "file": "assets/audio/history-first-rap.mp3", "where": "Истоки / ранний рэп", "hint": "Короткий отрывок ранней рэп-записи (15-30 сек, MP3)" },
+    { "file": "assets/audio/history-breakbeat.wav", "where": "Истоки / брейкбит", "hint": "Классический брейкбит (15-30 сек, WAV)" },
+    { "file": "assets/audio/workflow-hook-demo.mp3", "where": "Практика / демо топ-линии", "hint": "Пример мелодии/хука (20-40 сек, MP3)" },
+    { "file": "assets/audio/mix-before.mp3", "where": "Звук / До", "hint": "Версия до обработки (20-30 сек, MP3)" },
+    { "file": "assets/audio/mix-after.mp3", "where": "Звук / После", "hint": "Версия после обработки (20-30 сек, MP3)" },
+    { "file": "assets/audio/trend-snippet.mp3", "where": "Тренды / коллаж", "hint": "Коллаж трендовых звуков (20-40 сек, MP3)" }
+  ],
+  "video": [
+    { "file": "assets/video/hero-studio.mp4", "where": "Hero / фон", "hint": "Беззвучное петлевое видео студийного процесса (10-20 сек)" },
+    { "file": "assets/video/history-evolution.mp4", "where": "Истоки / эволюция", "hint": "Короткая нарезка об эволюции битмейкинга (20-40 сек)" },
+    { "file": "assets/video/ableton-drumrack.mp4", "where": "Ableton / Drum Rack", "hint": "Демо создания грува в Drum Rack (20-40 сек)" },
+    { "file": "assets/video/ableton-warp.mp4", "where": "Ableton / Warping", "hint": "Демонстрация творческого варпинга (20-40 сек)" },
+    { "file": "assets/video/workflow-groove.mp4", "where": "Практика / грув", "hint": "Построение грува (20-40 сек)" }
+  ]
+}
