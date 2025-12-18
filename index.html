@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Мультимедийный лонгрид о битмейкинге: история, возможности, практики и тренды. Акцент на Ableton Live. Тёмная тема, интерактив, локальные медиа.">
+  <title>Битмейкинг: от истоков до Ableton</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Используем системные шрифты с кириллицей для локальности -->
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#content">Пропустить навигацию</a>
+  <header class="hero" id="hero" aria-label="Вступление">
+    <div class="hero__media">
+      <!-- Замените на локальный фоновый видеоролик студии -->
+      <video class="hero__video" src="assets/video/hero-studio.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+    </div>
+    <div class="hero__overlay">
+      <h1>Битмейкинг: от истоков до Ableton</h1>
+      <p class="hero__lead">Как музыка рождается из идей, ритма и возможностей. Вдохновляющий гид по созданию битов, от первых драм-машин до сегодняшних студий — с особой любовью к Ableton Live.</p>
+      <div class="hero__cta">
+        <a href="#toc" class="btn btn--accent">К оглавлению</a>
+        <a href="#ableton" class="btn">Сразу к Ableton</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="toc" id="toc" aria-label="Оглавление">
+      <nav>
+        <h2 class="toc__title">Оглавление</h2>
+        <ol class="toc__list">
+          <li><a href="#history">Истоки</a></li>
+          <li><a href="#ableton">Ableton: возможности</a></li>
+          <li><a href="#workflow">Практика создания бита</a></li>
+          <li><a href="#sound">Звук: саунд‑дизайн, микс, мастер</a></li>
+          <li><a href="#trends">Тренды и сцены</a></li>
+          <li><a href="#setup">Оборудование и сетап</a></li>
+          <li><a href="#compare">Сравнение DAW (с улыбкой)</a></li>
+          <li><a href="#resources">Ресурсы</a></li>
+          <li><a href="#finale">Заключение</a></li>
+        </ol>
+      </nav>
+    </aside>
+
+    <main id="content" class="content" aria-label="Основной контент">
+      <!-- Истоки -->
+      <section id="history" class="section section--history" aria-labelledby="history-title">
+        <div class="section__inner">
+          <h2 id="history-title">Истоки: ритм, машины, голоса</h2>
+          <p class="dropcap">
+            Битмейкинг начался задолго до компьютеров: с барабанов, хлопков, шагов и сердца, которое задаёт темп жизни. Первые драм‑машины и семплеры подарили продюсерам способность рисовать ритм кнопками, вырезать фрагменты любимых записей и собирать их в новые истории. Так родился современный бит — гибкий, дерзкий, живой.
+          <p>
+            Ableton быстрее — важен творческий инерциальный момент: мысль сохраняет форму. Нажимаете — и слышите; перетаскиваете — получается музыкальная фраза. Это ощущение непрерывности и есть ценность.
+          </p>
+          </p>
+          <blockquote class="pullquote">
+            Барабан — это сердце. Семплер — память. DAW — свобода.
+          </blockquote>
+          <div class="timeline" aria-label="Таймлайн истории битмейкинга">
+            <article class="timeline__item">
+              <h3>Ранние ритмы и драм‑машины</h3>
+              <p>От Roland TR‑808 до SP‑1200 — инструменты, ставшие легендами. Их звук — это подпись целых эпох.</p>
+              <figure class="media-card">
+                <img src="assets/images/history-808.png" alt="Roland TR‑808 крупным планом">
+                <figcaption>Фирменный жирный низ 808 — бас, который чувствуется телом.</figcaption>
+              </figure>
+            </article>
+            <article class="timeline__item">
+              <h3>Сэмплинг и первые рэп‑записи</h3>
+              <p>Сэмплинг — искусство услышать иначе. Вырезать, перетасовать, оживить.</p>
+              <div class="audio-block">
+                <audio controls preload="none" src="assets/audio/history-first-rap.mp3" aria-label="Фрагмент раннего рэпа"></audio>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <h3>Цифровая эра: компьютеры и DAW</h3>
+              <p>Когда рабочие станции пришли домой, музыка стала ближе. И творить стало легче, быстрее, шире.</p>
+              <div class="video-block">
+                <video controls preload="metadata" src="assets/video/history-evolution.mp4" aria-label="Короткий ролик об эволюции битмейкинга"></video>
+              </div>
+            </article>
+          </div>
+          <h3 class="subhead">Культура сэмплинга</h3>
+          <p>
+            Сэмплинг — переосмысление. Вырезанный кусок становится кирпичиком новой архитектуры: меняется тон, темп, контекст, меняется смысл. Так простая винтовая партия из соула вдруг превращается в ночной фон города XXI века.
+          </p>
+          <div class="grid">
+            <figure class="media-card">
+              <img src="assets/images/history-mpc.jpg" alt="Akai MPC на столе продюсера">
+              <figcaption>MPC — культовый инструмент, где пальцы становятся перкуссией.</figcaption>
+            </figure>
+            <div class="audio-block">
+              <audio controls preload="none" src="assets/audio/history-breakbeat.wav" aria-label="Брейкбит для сэмплинга"></audio>
+            </div>
+          </div>
+          <h3 class="subhead">Голоса улиц</h3>
+          <p>
+            Рэп — это хроника города. Битмейкер водит камеру: где-то подчеркнёт детали снейра, где-то отодвинет бас, чтобы дать голосу надышаться. И внутри этой архитектуры слова находят свой ритм.
+          </p>
+          <p>
+            Интуиция и наблюдательность — ключи к правде звука. Если прислушаться к рельсам, торговым центрам, автобусным остановкам — там тоже есть ритм. В нём и рождается честный бит, который разговаривает без лишних объяснений.
+          </p>
+        </div>
+      </section>
+
+      <!-- Ableton -->
+      <section id="ableton" class="section section--ableton" aria-labelledby="ableton-title">
+        <div class="section__inner">
+          <h2 id="ableton-title">Ableton Live: возможности, которые вдохновляют</h2>
+          <p>
+            Ableton — про свободу и скорость. Про «здесь и сейчас». Его сила — не в списке функций, а в том, как он превращает импульс в результат: 
+            сессии для набросков, треки для истории, клипы для игры с временем, варпинг для пластики звука. Это про поток, где идеи не тонут в меню.
+          </p>
+          <h3 class="subhead">Поток идей: Session vs Arrangement</h3>
+          <p>
+            Два взгляда на музыку: Session — как стол с кубиками, которые можно переставлять, сочетать и запускать. Arrangement — как кинолента, где история расправляется во времени. Вы начинаете в Session, находите дыхание трека, а затем переносите его в Arrangement, чтобы рассказать историю.
+          </p>
+          <div class="grid">
+            <figure class="media-card">
+              <img src="assets/images/ableton-arrangement.png" alt="Ableton Live: вид Arrangement с дорожками и автоматизацией">
+              <figcaption>Arrangement View: нотации времени, контрастов и ожиданий.</figcaption>
+            </figure>
+            <figure class="media-card">
+              <img src="assets/images/ableton-session.png" alt="Ableton Live: вид Session с клипами">
+              <figcaption>Session View: место, где рождение идеи — одно нажатие.</figcaption>
+            </figure>
+          </div>
+          <h3 class="subhead">Время как материал: Warping</h3>
+          <p>
+            Warping делает звук гибким: ускорение, замедление — и главное, новая манера дыхания фразы. Один маркер — и драм‑луп вдруг становится другой личностью.
+          </p>
+          <div class="video-block">
+            <video controls preload="metadata" src="assets/video/ableton-warp.mp4" aria-label="Warping в Ableton: творческая пластика времени"></video>
+          </div>
+          <h3 class="subhead">Руки на инструменте: Push</h3>
+          <p>
+            Ableton Push — музыкальная плоскость. Ритм под пальцами, ноты по геометрии, гармония — как карта города. Идеи остаются рядом, без потерь между мышью и меню.
+          </p>
+          <figure class="media-card">
+            <img src="assets/images/ableton-push.jpg" alt="Ableton Push в процессе записи паттерна">
+            <figcaption>Push: когда интерфейс становится инструментом.</figcaption>
+          </figure>
+          <h3 class="subhead">Мир возможностей: Max for Live</h3>
+          <p>
+            Max for Live — это мастерская внутри студии. Здесь можно собрать свой инструмент, эффект, визуализацию — и дать треку ещё один голос.
+          </p>
+          <div class="grid">
+            <figure class="media-card">
+              <video controls preload="metadata" src="assets/video/ableton-drumrack.mp4" aria-label="Короткое видео: создание грува в Drum Rack"></video>
+              <figcaption>Drum Rack: барабанная панель для ритма, который двигает.</figcaption>
+            </figure>
+            <figure class="media-card">
+              <img src="assets/images/ableton-arrangement.png" alt="Ableton Live: вид Arrangement">
+              <figcaption>Автоматизация — инструмент эмоции. Тихо/громко — это дыхание истории.</figcaption>
+            </figure>
+          </div>
+          <blockquote class="note note--humor">
+            <p>Ableton лучше всех. Почему? Потому что всегда успевает за вашей идеей. Остальные хорошие, но Ableton — ваш напарник.</p>
+          </blockquote>
+          <aside class="sidebar-note" aria-label="Заметки Ableton">
+            <h4>Заметки</h4>
+            <ul>
+              <li>Клипы — ячейки памяти трека.</li>
+              <li>Грув — отношение к времени.</li>
+              <li>Автоматизация — кисть, рисующая контрасты и ожидание.</li>
+            </ul>
+          </aside>
+          <p>
+            В Ableton идеи живут рядом с действиями. И это простое соседство — сильнее любой «фичи»: меньше расстояния между мыслью и звуком.
+          </p>
+        </div>
+      </section>
+
+      <!-- Практика -->
+      <section id="workflow" class="section section--workflow" aria-labelledby="workflow-title">
+        <div class="section__inner">
+          <h2 id="workflow-title">Практика: дорожная карта создания бита</h2>
+          <p>
+            Вечером город становится студией. Лифт шумит как лоу‑фай, окрестности звучат как сэмпл‑паки, а свет фонаря — это точка входа в атмосферу. Бит начинается не с кика, а с образа: какую историю вы хотите рассказать?
+          </p>
+          <div class="steps">
+            <article class="step">
+              <h3>1. Импульс и референс</h3>
+              <p>Сформулируйте настроение: «ночной город», «энергия зала», «интровертный ло‑фай». Найдите один‑два референса для курса.</p>
+            </article>
+            <article class="step">
+              <h3>2. Ритм и грув</h3>
+              <p>Ставьте кик, снейр, хай‑хэты. Играйте свингом, микротаймингом, живыми вариациями. Грув — это характер.</p>
+              <video class="step__video" controls preload="metadata" src="assets/video/workflow-groove.mp4" aria-label="Видео: построение грува в Ableton"></video>
+            </article>
+            <article class="step">
+              <h3>3. Саб и бас</h3>
+              <p>808 или синтезированный бас — ищите диалог с киком, чтобы низ звучал монолитно, но дышал.</p>
+            </article>
+            <article class="step">
+              <h3>4. Топ‑линия и хуки</h3>
+              <p>Мелодия — это личность трека. Дайте ей пространство. Экспериментируйте с тембрами и ритмической пластикой.</p>
+              <div class="audio-block">
+                <audio controls preload="none" src="assets/audio/workflow-hook-demo.mp3" aria-label="Демо топ‑линии"></audio>
+              </div>
+            </article>
+            <article class="step">
+              <h3>5. Аранжировка</h3>
+              <p>Строим динамику: интро — куплет — переход — припев — бридж — финал. Контраст и «воздух» удерживают внимание.</p>
+            </article>
+            <article class="step">
+              <h3>6. Деталь и текстура</h3>
+              <p>Фоли, атмосферные петли, шума немного — чтобы мир трека казался настоящим.</p>
+              <img class="step__image" src="assets/images/workflow-texture.png" alt="Аранжировка с текстурными слоями в Ableton">
+            </article>
+          </div>
+          <p>
+            Иногда лучший совет — выключить экран и послушать тишину. А потом вернуть музыку туда, где она ощущается по‑настоящему.
+          </p>
+          <p>
+            Ищите свои ритуалы: кружка чая, короткая прогулка, пять минут импровизации без записи. Битмейкинг — не только про технику, это про настрои и привычки, которые дают идеям шанс.
+          </p>
+        </div>
+      </section>
+
+      <!-- Звук -->
+      <section id="sound" class="section section--sound" aria-labelledby="sound-title">
+        <div class="section__inner">
+          <h2 id="sound-title">Звук: саунд‑дизайн, микс, мастер</h2>
+          <p>
+            Хороший звук — это прозрачность, баланс и эмоция. Саунд‑дизайн формирует палитру, микс собирает композицию в целое, мастер подготавливает трек к миру.
+          </p>
+          <div class="before-after" aria-label="Сравнение до/после">
+            <div class="before-after__controls">
+              <button class="btn" data-variant="before">До</button>
+              <button class="btn btn--accent" data-variant="after">После</button>
+              <label class="volume">
+                <span>Громкость</span>
+                <input type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Громкость сравнения">
+              </label>
+              <button class="btn btn--muted" data-action="stop">Стоп</button>
+            </div>
+            <div class="before-after__players">
+              <audio id="audio-before" src="assets/audio/mix-before.mp3" preload="none"></audio>
+              <audio id="audio-after" src="assets/audio/mix-after.mp3" preload="none"></audio>
+            </div>
+            <p class="muted">Нажмите «До» или «После», чтобы услышать разницу.</p>
+          </div>
+          <aside class="sidebar-note" aria-label="Заметки о звуке">
+            <h4>Мини‑заметки</h4>
+            <ul>
+              <li>Сатурация — не «громче», а «теплее» и «богаче».</li>
+              <li>Параллельная компрессия — объём без потери динамики.</li>
+              <li>Хэдрум — пространство для мастера, а не потерянные децибелы.</li>
+            </ul>
+          </aside>
+          <p>
+            Мастеринг — это не волшебная кнопка, а аккуратная доводка: формат, уровень, перевод в разные системы воспроизведения. Важно слышать не только трек, но и мир, где он будет жить.
+          </p>
+        </div>
+      </section>
+
+      <!-- Тренды -->
+      <section id="trends" class="section section--trends" aria-labelledby="trends-title">
+        <div class="section__inner">
+          <h2 id="trends-title">Тренды и сцены: сегодня и завтра</h2>
+          <p>
+            Музыка — разговор времени. Trap и drill рисуют улицы; EDM и hyperpop — неон будущего; локальные сцены добавляют акценты. Важно — слышать мир и говорить с ним своим голосом.
+          </p>
+          <div class="infographs" aria-label="Инфографика трендов">
+            <div class="chart chart--tempo" role="img" aria-label="Диапазоны темпов популярных жанров">
+              <div class="chart__bar" style="--label:'Boom‑bap'; --value:90; --color:#f59e0b"></div>
+              <div class="chart__bar" style="--label:'Trap'; --value:140; --color:#8b5cf6"></div>
+              <div class="chart__bar" style="--label:'Drill'; --value:140; --color:#6366f1"></div>
+              <div class="chart__bar" style="--label:'Hyperpop'; --value:160; --color:#f43f5e"></div>
+            </div>
+          </div>
+          <div class="audio-block">
+            <audio controls preload="none" src="assets/audio/trend-snippet.mp3" aria-label="Коллаж трендовых звуков"></audio>
+          </div>
+          <div class="trend-cards" aria-label="Карточки сцен и трендов">
+            <article class="trend-card">
+              <h3>Hyperpop</h3>
+              <p>Сверхскорость, глитч, блёстки. Откровенно искусственный звук — тоже честность.</p>
+            </article>
+            <article class="trend-card">
+              <h3>Phonk</h3>
+              <p>Лоу‑фай, винтаж, грузный бас. Ностальгия не как прошлое, а как стиль настоящего.</p>
+            </article>
+            <article class="trend-card">
+              <h3>Afrobeats</h3>
+              <p>Танцевальность в основании, улыбка в середине, свет вверху микса. Ритм, который объединяет.</p>
+            </article>
+            <article class="trend-card">
+              <h3>Jersey Club</h3>
+              <p>Перепады, семплы, прыжки. Музыка как трюк — и трюк как музыка.</p>
+            </article>
+            <article class="trend-card">
+              <h3>Drill</h3>
+              <p>Холодная драматургия и низ, который берёт своё. Честность — тоже ритм.</p>
+            </article>
+          </div>
+          <p>
+            Тренды — общий язык времени, к которому добавляют диалекты города, комнаты, вашей конкретной истории. Главное — собственный голос и способ сказать своё.
+          </p>
+        </div>
+      </section>
+
+      <!-- Сетап -->
+      <section id="setup" class="section section--setup" aria-labelledby="setup-title">
+        <div class="section__inner">
+          <h2 id="setup-title">Оборудование и сетап: просто и эффективно</h2>
+          <p>
+            Нужен ноутбук, интерфейс, наушники, MIDI‑клавиатура — и пространство для идей. Остальное — вкус и привычка.
+          </p>
+          <div class="gallery" aria-label="Галерея оборудования">
+            <figure class="gallery__item">
+              <img src="assets/images/setup-midi.jpg" alt="MIDI‑клавиатура на столе">
+              <figcaption>MIDI‑клавиатура: быстрый доступ к мелодии и ритму.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img src="assets/images/setup-phones.jpg" alt="Студийные наушники на кронштейне">
+              <figcaption>Наушники: честный звук — честные решения.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <img src="assets/images/setup-interface.jpg" alt="Аудиоинтерфейс на рабочем столе">
+              <figcaption>Интерфейс: мост между идеей и записью.</figcaption>
+            </figure>
+          </div>
+          <h3 class="subhead">Мифы и правда</h3>
+          <p>
+            «Нужно много железа» — миф. Нужна привычка слушать и решать. «Нужно дорого» — миф. Нужен вкус и ориентиры. Остальное — дорога, а не билет.
+          </p>
+          <p>
+            Самая важная часть сетапа — та, которая делает вас свободнее. Это может быть тишина в комнате, удобный стул или привычная лампа. Музыка идёт туда, где ей есть место.
+          </p>
+        </div>
+      </section>
+
+      <!-- Сравнение DAW -->
+      <section id="compare" class="section section--compare" aria-labelledby="compare-title">
+        <div class="section__inner">
+          <h2 id="compare-title">Короткое сравнение DAW (с улыбкой)</h2>
+          <p>
+            FL — уютный дом для паттернов, Logic — студийный швейцарский нож, Pro Tools — для больших комнат. Но Ableton… Ableton — это «сейчас». 
+            Шутка, но правда: где идея — там и Ableton.
+          </p>
+          <p class="subhead">Ощущение «непрерывности»</p>
+            Когда мы говорим «Ableton быстрее», речь не о секундах, а о творческом инерциальном моменте: мысль не успевает распасться на части. Вы нажимаете — и слышите; перетаскиваете — и получается музыкальная фраза. Это ощущение непрерывности и есть ценность.
+          </p>
+          <p>
+            У FL — уютнейшие паттерны, у Logic — блестящая студийность, у Pro Tools — сила больших комнат. Но если идея просится «прямо сейчас» — Ableton часто оказывается уже на месте. И, да, шутки про него тоже пишутся быстрее.
+          </p>
+          <p class="muted">P.S. Мы любим все DAW — просто у Ableton и мемов, и лайв‑сетапов больше.</p>
+        </div>
+      </section>
+
+      <!-- Ресурсы -->
+      <section id="resources" class="section section--resources" aria-labelledby="resources-title">
+        <div class="section__inner">
+          <h2 id="resources-title">Ресурсы: куда смотреть и что слушать</h2>
+          <ul class="resources">
+            <li>Пакеты сэмплов: соберите свою палитру (локальные примеры).</li>
+            <li>Учебные проекты: разбирайте структуру треков.</li>
+            <li>Плейлисты: слушайте сцену — становитесь её частью.</li>
+          </ul>
+          <p>
+            Важно и «где взять звуки», и «как их готовить»: систематизируйте папки, называйте файлы понятно, делайте заметки о тембрах и сочетаниях. Вкус — это навык организации.
+          </p>
+        </div>
+      </section>
+
+      <!-- Заключение -->
+      <section id="finale" class="section section--finale" aria-labelledby="finale-title">
+        <div class="section__inner">
+          <h2 id="finale-title">Заключение: ваш бит — ваша история</h2>
+          <p>
+            Битмейкинг — это разговор с миром. Прислушайтесь к себе, к городу, к памяти. Ставьте ритм, ищите звук, не бойтесь тишины. 
+            Пусть Ableton помогает, но голос — ваш. Начните — остальные шаги захотят прийти сами.
+          </p>
+          <p class="muted">Все медиа — локальные. Замените плейсхолдеры своими файлами в папке <code>assets</code>.</p>
+          <p>
+            Если музыка — это кинематограф, то бит — монтаж. Оставляйте паузы, чтобы сцены успевали взглядом зацепиться за детали. Пускай бас рассказывает часть истории, а тишина — другую.
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer" aria-label="Подвал">
+    <p>© 2025 Лонгрид о битмейкинге. Сделано с вдохновением и уважением к музыке.</p>
+  </footer>
+</body>
+</html>
